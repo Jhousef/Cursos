@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Jquery</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //código
+            $('span').click(function () {
+                $("body").animate({
+                    "fontSize": "64px",
+                    "padding-top": "250px",
+                    "padding-left": "100px"
+                }, 10000)
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <span>Hellow, World!</span>
+
+    <div>
+
+        <h1>
+            Some dois números
+        </h1>
+
+        Número 1 <input type="text" name="a" id="a">
+        Número 2 <input type="text" name="b" id="b">
+
+        <div ip="res">
+            resultado
+        </div>
+
+        <input type="submit" onclick="clicar()">
+
+    </div>
+
+    <script src="teste.js"></script>
+</body>
+
+</html>
